@@ -19,7 +19,7 @@ function ImageWithAlt({ src, alt, className }) {
 // ];
 
 function Draft() {
-  const [clicked,setClicked] = useState(false);
+  const [clicked,setClicked] = useState(true);
 
   function handleClick(){
     setClicked(!clicked);
@@ -27,7 +27,6 @@ function Draft() {
 
   return itemData.map((item) => (
     <>
-    <button onClick={handleClick}>Click to change State</button>
     <div className={`flex flex-wrap gap-5 gap-y-24 justify-between content-center items-center px-1 mt-1.5 w-full ${item.bgClass} rounded-lg max-md:pr-5 max-md:max-w-full`}>
       {clicked && <>
       <div className='flex gap-1 self-stretch py-1 pr-1'>
@@ -36,9 +35,9 @@ function Draft() {
         </div>
         <div className='my-auto text-base font-semibold text-zinc-800'>{item.name}</div>
       </div>
-      <div className='self-stretch my-auto text-xl font-medium text-black'>kgs</div>
-      <div className='self-stretch my-auto text-xl font-medium text-black'>25</div>
-      <div className='self-stretch my-auto text-xl font-medium text-black'>10</div>
+      <div className='self-stretch my-auto text-xl font-medium text-black'>{item.UOM}</div>
+      <div className='self-stretch my-auto text-xl font-medium text-black'>{item.parcelevel}</div>
+      <div className='self-stretch my-auto text-xl font-medium text-black'>{item.currentInventory}</div>
       <div className='flex gap-5 justify-between items-start self-stretch my-auto text-2xl font-semibold whitespace-nowrap text-zinc-800'>
         <div className='justify-center px-2.5 bg-white rounded-md'>-</div>
         <div className='justify-center self-stretch px-4 py-1 text-blue-500 bg-white rounded'>10</div>
