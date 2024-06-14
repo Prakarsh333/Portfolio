@@ -1,0 +1,16 @@
+.temp{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+}
+.viewprop{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%
+}
+.header_view{
+    height: 40%;
+    width: 100%;
+    background-color: blue;
+}
