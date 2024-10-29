@@ -2,7 +2,6 @@ import Laptop from "./images/Laptop.jpg"
 function Header() {
     return (
         <>
-        <>This Webpage is under Beta version.</>
         <div class="relative h-screen w-full">
     <img src={Laptop} alt="Background Image" class="object-cover object-center w-full h-full" />
     <img src="" alt="Background Image" class="absolute inset-0 w-full h-full object-cover filter blur-sm"/>
